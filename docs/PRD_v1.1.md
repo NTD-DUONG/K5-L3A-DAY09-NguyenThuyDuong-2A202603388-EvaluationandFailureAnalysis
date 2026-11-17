@@ -60,3 +60,7 @@ Chưa đo người dùng thật; MockLLM/public replay không đại diện prod
 |---|---|
 | Product | Chưa phê duyệt |
 | Eval owner | Đề xuất Nguyễn Thùy Dương; chưa ký duyệt release |
+
+## Bổ sung đánh giá v2
+
+Giữ nguyên tính năng và code Lab 8. Đánh giá v2 bổ sung dữ liệu adversarial, slice money_movement/adversarial/denial, pass_hat_5 blocking sàn 0.80, integrity và ratchet với --base-spec. Spec v2.0 có eval-set version mới nên baseline riêng. Chi tiết số liệu, A/A và giới hạn tại [v2_validation.md](v2_validation.md); không coi kiểm tra public là phê duyệt production.

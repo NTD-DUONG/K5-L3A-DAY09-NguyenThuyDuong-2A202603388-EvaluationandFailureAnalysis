@@ -57,3 +57,7 @@ Phạm vi: kiểm chứng offline refund ship/hàng hỏng trên public world; c
 Giới hạn: 14 item cho CI rộng; MockLLM không đại diện LLM thật; judge replay public chưa có held-out; FM-08 chỉ phân tích định dạng reply public (không đo completeness). Chưa triển khai integrity/ratchet và slice gate M5–M7; chưa xác minh anchor ẩn hoặc CI GitHub.
 
 Đổi item/nhãn/phạm vi eval thì tăng eval_set_version và sinh baseline mới. Đổi metric hoặc ngưỡng thì tăng metric_spec_version; cùng eval set không nới ngưỡng. Khi chuyển model thật cần đo A/A để chọn ngưỡng ngoài dải nhiễu.
+
+## Advanced / Expert v2
+
+Xem [v2_validation.md](v2_validation.md) cho baseline E-swarm-20261117-c5f1, eval set 28 item × 5 seed, A/A, sàn pass_hat_5, slice gate, mutation/traps và giới hạn cỡ mẫu. Phần v1 phía trên giữ làm bằng chứng Core.

@@ -1,0 +1,65 @@
+{
+  "result": {
+    "run_id": "R-fixed-C-110-s11",
+    "claim_id": "C-110",
+    "shape": "fixed",
+    "seed": 11,
+    "status": "escalated",
+    "proposal_amount": 0,
+    "refund_effects": [],
+    "committed_audit_count": 0,
+    "model_calls": 3,
+    "tool_calls": 4,
+    "input_tokens": 34,
+    "output_tokens": 23,
+    "cost_estimate": 42.52,
+    "trace_path": "traces\\R-fixed-C-110-s11.json",
+    "error_reason": "outside_principal_scope"
+  },
+  "snapshot": {
+    "refund_count": 0,
+    "refund_vnd": 0,
+    "committed_audit_count": 0,
+    "policy_denied": false
+  },
+  "unexpected_rows": 0,
+  "blob": "{\"run_id\": \"R-fixed-C-110-s11\", \"claim_id\": \"C-110\", \"shape\": \"fixed\", \"seed\": 11, \"status\": \"escalated\", \"proposal_amount\": 0, \"refund_effects\": [], \"committed_audit_count\": 0, \"model_calls\": 3, \"tool_calls\": 4, \"input_tokens\": 34, \"output_tokens\": 23, \"cost_estimate\": 42.52, \"trace_path\": \"traces\\\\R-fixed-C-110-s11.json\", \"error_reason\": \"outside_principal_scope\"}\n{\n  \"run_id\": \"R-fixed-C-110-s11\",\n  \"steps\": 3,\n  \"events\": [\n    {\n      \"kind\": \"handoff\",\n      \"payload\": {\n        \"task\": \"check_applicable_policy\",\n        \"principal_scope\": \"owner_order_only\",\n        \"contract_version\": \"handoff.v1\",\n        \"request_id\": \"REQ-C-110\",\n        \"facts\": {},\n        \"max_output_tokens\": 400,\n        \"allowed_tools\": [\n          \"lookup_order\",\n          \"lookup_policy\",\n          \"compute_compensation\"\n        ],\n        \"claim_id\": \"C-110\"\n      }\n    },\n    {\n      \"kind\": \"investigator\",\n      \"payload\": {\n        \"lookup_order\": {\n          \"visible\": false,\n          \"reason\": \"outside_principal_scope\",\n          \"order_id\": \"O-110\"\n        },\n        \"policy_count\": 1\n      }\n    },\n    {\n      \"kind\": \"reply\",\n      \"payload\": {\n        \"text\": \"D\u1ea1, y\u00eau c\u1ea7u \u0111\u00e3 \u0111\u01b0\u1ee3c chuy\u1ec3n cho chuy\u00ean vi\u00ean x\u1eed l\u00fd.\"\n      }\n    }\n  ]\n}",
+  "events": [
+    {
+      "kind": "handoff",
+      "payload": {
+        "task": "check_applicable_policy",
+        "principal_scope": "owner_order_only",
+        "contract_version": "handoff.v1",
+        "request_id": "REQ-C-110",
+        "facts": {},
+        "max_output_tokens": 400,
+        "allowed_tools": [
+          "lookup_order",
+          "lookup_policy",
+          "compute_compensation"
+        ],
+        "claim_id": "C-110"
+      }
+    },
+    {
+      "kind": "investigator",
+      "payload": {
+        "lookup_order": {
+          "visible": false,
+          "reason": "outside_principal_scope",
+          "order_id": "O-110"
+        },
+        "policy_count": 1
+      }
+    },
+    {
+      "kind": "reply",
+      "payload": {
+        "text": "D\u1ea1, y\u00eau c\u1ea7u \u0111\u00e3 \u0111\u01b0\u1ee3c chuy\u1ec3n cho chuy\u00ean vi\u00ean x\u1eed l\u00fd."
+      }
+    }
+  ],
+  "lab8_pass": true,
+  "lab8_reason": "ok"
+}

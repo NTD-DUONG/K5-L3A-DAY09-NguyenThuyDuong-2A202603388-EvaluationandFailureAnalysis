@@ -1,0 +1,46 @@
+evaluator_errors_as_nan
+gate: PR E-slice_regression-20261117-c5f1 vs main E-swarm-20261117-c5f1 · eval set c5f1eabf05ae
+  INTEGRITY PR: missing/invalid row metric refund_amount_correct
+  INTEGRITY PR: missing/invalid row metric pass_rate
+  INTEGRITY PR: missing/invalid row metric proposal_amount_correct
+exit 1 — blocked: integrity
+
+dropped_failing_rows
+gate: PR E-slice_regression-20261117-c5f1 vs main E-swarm-20261117-c5f1 · eval set c5f1eabf05ae
+  INTEGRITY PR: incomplete row count
+  INTEGRITY PR: incomplete item/seed product
+  INTEGRITY PR: missing blocking metric pass_hat_5
+  INTEGRITY PR: summary disagrees with rows for pass_at_3
+  INTEGRITY PR: summary disagrees with rows for pass_hat_3
+  INTEGRITY PR: summary disagrees with rows for pass_at_5
+  INTEGRITY PR: summary disagrees with rows for pass_hat_5
+  INTEGRITY PR trial keys differ from baseline
+exit 1 — blocked: integrity
+
+cherry_picked_seeds
+gate: PR E-slice_regression-20261117-c5f1 vs main E-swarm-20261117-c5f1 · eval set c5f1eabf05ae
+  INTEGRITY PR: missing blocking metric pass_hat_5
+  INTEGRITY PR: summary disagrees with rows for pass_at_3
+  INTEGRITY PR: summary disagrees with rows for pass_hat_3
+  INTEGRITY PR: summary disagrees with rows for pass_at_5
+  INTEGRITY PR: summary disagrees with rows for pass_hat_5
+  INTEGRITY PR trial keys differ from baseline
+  INTEGRITY PR seeds differ from spec
+exit 1 — blocked: integrity
+
+loosened_spec
+gate: PR E-slice_regression-20261117-c5f1 vs main E-swarm-20261117-c5f1 · eval set c5f1eabf05ae
+  INTEGRITY ratchet: loosened db_fact_kept/min
+  INTEGRITY ratchet: loosened refund_amount_correct/min
+  INTEGRITY ratchet: removed paired check refund_amount_correct
+  INTEGRITY ratchet: loosened pass_rate/min
+  INTEGRITY ratchet: removed paired check pass_rate
+  INTEGRITY ratchet: loosened pass_hat_5/min
+  INTEGRITY ratchet: loosened reply_amount_matches_ledger/min
+  INTEGRITY ratchet: removed paired check reply_amount_matches_ledger
+  INTEGRITY ratchet: loosened proposal_amount_correct/min
+  INTEGRITY ratchet: removed paired check proposal_amount_correct
+  INTEGRITY ratchet: removed ('money_movement', 'pass_rate')
+  INTEGRITY ratchet: removed ('adversarial', 'pass_rate')
+  INTEGRITY ratchet: removed ('denial', 'pass_rate')
+exit 1 — blocked: integrity
