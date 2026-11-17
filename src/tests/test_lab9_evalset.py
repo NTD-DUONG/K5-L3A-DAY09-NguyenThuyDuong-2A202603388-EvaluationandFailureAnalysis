@@ -37,6 +37,10 @@ def test_build_writes_items_and_labels_without_checking_tags(tmp_path, evalset_c
     assert item["claim_id"] == "C-001"
     assert "expected" not in item
     assert labels == {"C-001": {"refund_vnd": 35000}}
+    # SHA must match the LF Git checkout used by Linux CI, including on Windows.
+    raw = (tmp_path / "data/eval/eval_set_v1.jsonl").read_bytes()
+    assert b"\r\n" not in raw
+    assert raw.endswith(b"\n")
 
 
 def test_explicit_check_runs_after_build(tmp_path, evalset_cli):

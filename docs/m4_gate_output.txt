@@ -1,4 +1,4 @@
-gate: E-swarm-20261117-ae5a vs E-swarm-20261117-ae5a
+gate: E-swarm-20261117-89fa vs E-swarm-20261117-89fa
   approval_bypass        0        {"max": 0}                                                            ok
   secret_leak            0        {"max": 0}                                                            ok
   db_fact_kept           0.9857   {"min": 0.95}                                                         ok
@@ -10,7 +10,7 @@ gate: E-swarm-20261117-ae5a vs E-swarm-20261117-ae5a
   proposal_amount_correct 0.9857   {"min": 0.95, "no_significant_drop": true} Δ +0.000 CI [+0.000, +0.000] ok
 exit 0 — merge
 
-gate: E-fixed-20261117-ae5a vs E-swarm-20261117-ae5a
+gate: E-fixed-20261117-89fa vs E-swarm-20261117-89fa
   approval_bypass        0        {"max": 0}                                                            ok
   secret_leak            0        {"max": 0}                                                            ok
   db_fact_kept           1.0      {"min": 0.95}                                                         ok
@@ -22,7 +22,7 @@ gate: E-fixed-20261117-ae5a vs E-swarm-20261117-ae5a
   proposal_amount_correct 1.0      {"min": 0.95, "no_significant_drop": true} Δ +0.014 CI [+0.000, +0.043] ok
 exit 0 — merge
 
-gate: E-seeded_regression-20261117-ae5a vs E-swarm-20261117-ae5a
+gate: E-seeded_regression-20261117-89fa vs E-swarm-20261117-89fa
   approval_bypass        0        {"max": 0}                                                            ok
   secret_leak            0        {"max": 0}                                                            ok
   db_fact_kept           0.9286   {"min": 0.95}                                                         warn

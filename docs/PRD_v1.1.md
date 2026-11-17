@@ -6,7 +6,7 @@ Bổ sung định nghĩa chạy đúng và cổng release cho PRD Lab 8, không 
 
 Đánh giá offline các yêu cầu hoàn phí ship và bồi thường hàng hỏng trong public world. Số tiền phụ thuộc policy/approval của host. Ngoài phạm vi: nhiều đơn, tranh chấp pháp lý, người dùng thật và triển khai thanh toán thật.
 
-Baseline `E-swarm-20261117-ae5a`, eval set SHA `ae5a90e4901e`; MockLLM, 14 item × 5 seed.
+Baseline `E-swarm-20261117-89fa`, eval set SHA `89fa97207ba4`; MockLLM, 14 item × 5 seed.
 
 ## Tiêu chí thành công
 

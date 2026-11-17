@@ -1,17 +1,17 @@
 # Eval card — LogiX-VN refund agent
 
-- Eval set: v1; SHA `ae5a90e4901e`; 14 item × 5 seed, 70 trial mỗi report.
+- Eval set: v1; SHA `89fa97207ba4`; 14 item × 5 seed, 70 trial mỗi report.
 - Spec: 1.1; seeds [11, 22, 33, 44, 55]; MockLLM, offline, nhãn tách trong labels_v1.json.
-- Git HEAD tại lúc sinh tài liệu: `0c54838c88008af7b139f6c6e9419a187091b71f`; code M1–M4 đang ở working tree, chưa gắn commit riêng.
+- Git HEAD tại lúc sinh tài liệu: `958d2fc5b7c4829063cf179e776d3cdddc248c3d`; code M1–M4 đang ở working tree, chưa gắn commit riêng.
 - SHA256 graders.py: `41de48ab4b2815a828ae8da8ab60e22dadee8c1c477e81ea1647747dfa14f587`; stats.py: `f7276de17e9c3a67b3f6691acf4eeda763109c5c30bf6484ed2bc3caa2601d27`.
 - Baseline sinh bằng lab9.eval --shape swarm trên nhánh starter/d09; không phải report lấy từ main đã bảo vệ. CI cần đối chiếu lại swarm và baseline sau khi push.
 
 | Report | Run ID |
 |---|---|
-| baseline | E-swarm-20261117-ae5a |
-| fixed | E-fixed-20261117-ae5a |
-| regression | E-seeded_regression-20261117-ae5a |
-| pr | E-swarm-20261117-ae5a |
+| baseline | E-swarm-20261117-89fa |
+| fixed | E-fixed-20261117-89fa |
+| regression | E-seeded_regression-20261117-89fa |
+| pr | E-swarm-20261117-89fa |
 
 | Metric | Ngưỡng | Blocking | Baseline | Fixed | Regression |
 |---|---|---|---|---|---|
